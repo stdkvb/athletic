@@ -1,0 +1,42 @@
+.activities {
+	display: flex;
+	gap: 20px;
+	margin-top: 20px;
+	padding: 0;
+	justify-content: space-between;
+
+	&__intelligence {
+		width: 100%;
+		background-image: url(@images/activities-1.png);
+		background-position: bottom right;
+		background-size: cover;
+		min-height: 282px;
+		@include radius;
+		padding: 40px;
+	}
+
+	&__sport {
+		width: 100%;
+		background-image: url(@images/activities-2.png);
+		background-position: bottom right;
+		background-size: cover;
+		min-height: 282px;
+		@include radius;
+		padding: 40px;
+	}
+
+	h2 {
+		@include medium-42;
+		color: $white;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		li {
+			@include regular-24;
+			color: $white;
+		}
+	}
+}
