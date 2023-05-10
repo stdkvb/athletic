@@ -1,0 +1,42 @@
+.title {
+	margin-top: 20px;
+	background-image: url(@images/title-background.png);
+	min-height: 600px;
+	@include radius;
+	padding-top: 90px;
+	padding-bottom: 20px;
+
+	span {
+		color: white;
+		padding: 12px 24px;
+		border-radius: 100px;
+	}
+
+	span:first-of-type {
+		background-color: rgba(255, 255, 255, 0.3);
+		margin-right: 20px;
+	}
+
+	span:last-of-type {
+		background-color:#F9B451;
+	}
+
+	h1 {
+		margin-top: 20px;
+		color: $white;
+		@include bold-68;
+
+		@include tablet {
+			@include bold-48;
+		}
+
+		@include mobile {
+			@include bold-32;
+		}
+	}
+
+	@include tablet {
+		min-height: unset;
+		padding-top: 40px;
+	}
+}

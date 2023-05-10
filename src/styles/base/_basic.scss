@@ -1,8 +1,10 @@
 * {
+	@include FontFamilySfRegular;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	line-height: 130%;
+	transition: all $transitionDuration;
 }
 
 html {
@@ -16,6 +18,10 @@ body {
 
 a {
 	text-decoration: none;
+
+	&:hover {
+		opacity: 0.5;
+	}
 }
 
 ul {
@@ -27,5 +33,26 @@ button {
 
 	:disabled {
 		cursor: default;
+	}
+}
+
+.container {
+	max-width: 1360px;
+	padding: 0 40px;
+	margin: 0 auto;
+
+	@include desktop_medium {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	@include tablet {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	@include mobile {
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }

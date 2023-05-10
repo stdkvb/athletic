@@ -1,0 +1,16 @@
+<header class="header">
+	<div class="container">
+		<img src="@icons/logo.svg">
+		<nav class="header__menu" id="menu">
+			<a href="#about">О лагере</a>
+			<a href="#parts">Смены</a>
+			<a href="#schedule">Расписание</a>
+			<a href="#reviews">Отзывы</a>
+			<a href="tel:+79153937711">+7-915-393-77-11</a>
+			@@include('components/ui/_button-link.html', {children: 'Оставить заявку'})
+			@@include('components/ui/_button.html', {class: 'header__close', children: '<img src="@icons/close.svg">', id: 'close'})
+		</nav>
+		<a class="header__phone" href="tel:+79153937711">+7-915-393-77-11</a>
+		@@include('components/ui/_button.html', {class: 'header__burger', children: '<img src="@icons/burger-menu.svg">', id: 'burger'})
+	</div>
+</header>
