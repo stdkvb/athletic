@@ -1,7 +1,8 @@
 <a
-	class="btn@@if (context.class) { @@class}"
+	class="btn @@if (context.class) { @@class}"
 	@@if (context.id) {id="@@id"}
 	@@if (context.type) {type="@@type"}
+	@@if (context.href) {href="@@href"}
 >
 	@@if (context.children) {
 		<span class="children">@@children</span>

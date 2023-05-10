@@ -1,0 +1,109 @@
+.stages {
+	min-height: 605px;
+	background-color: #357AF3;
+	@include radius;
+	margin-top: 20px;
+	padding: 44px 40px 46px 40px;
+
+	&__swiper {
+		margin-top: 30px;
+	}
+
+	&__card {
+		max-width: 343px;
+		@include radius;
+		background-color: $white;
+		padding: 40px 24px;
+		display: grid;
+		grid-template-columns: 1fr 80px;
+		grid-template-areas:
+		'num img'
+		'title img'
+		'date date'
+		'text text'
+		'price price'
+		'promotion promotion'
+		'button button';
+
+		span {
+			grid-area: num;
+			color: $gray;
+			@include medium-16;
+			margin-bottom: 6px;
+		}
+
+		picture {
+			grid-area: img;
+		}
+
+		h3 {
+			grid-area: title;
+			color: $black;
+			@include bold-32;
+		}
+
+		h4 {
+			grid-area: date;
+			color: $black;
+			@include bold-32;
+			margin-bottom: 10px;
+		}
+
+		p {
+			grid-area: text;
+			color: $black;
+			@include regular-16;
+			margin-bottom: 32px;
+		}
+
+		div {
+			grid-area: price;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+
+			 span:first-of-type {
+				color: $pink;
+				@include bold-36;
+			 }
+
+			 span:last-of-type {
+				color: $gray;
+				text-decoration: line-through;
+				@include bold-16;
+			 }
+		}
+
+		p:last-of-type {
+			grid-area: promotion;
+		}
+
+		.btn {
+			grid-area: button;
+			width: 100%;
+			span {
+				color: $white;
+				margin: 0;
+			}
+
+			&:hover {
+				span {
+					color: $pink;
+				}
+			}
+		}
+	}
+
+	.swiper-button-prev {
+		&:after {
+			content: url(@icons/arrow.svg);
+		}
+	}
+
+	.swiper-button-next {
+		&:after {
+			content: url(@icons/arrow.svg);
+			transform: rotate(180deg);
+		}
+	}
+}

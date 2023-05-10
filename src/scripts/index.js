@@ -13,3 +13,16 @@ links.forEach((element) => {
 		menu.classList.toggle('active')
 	})
 });
+
+new Swiper('.stages__swiper', {
+	slidesPerView: 'auto',
+	spaceBetween: 20,
+	breakpoints: {
+		992: {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			}
+		}
+	}
+})

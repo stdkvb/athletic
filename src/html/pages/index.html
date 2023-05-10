@@ -16,7 +16,7 @@
 				Классные каникулы детям!
 			</h1>
 		</section>
-		<section class="activities container">
+		<section class="activities container" id="activities">
 			<div class="activities__intelligence">
 				<h2>Ителлектуальные занятия</h2>
 				<ul>
@@ -35,6 +35,93 @@
 					<li>Кикбоксинг</li>
 					<li>Акробатика</li>
 				</ul>
+			</div>
+		</section>
+		<section class="stages container" id="stages">
+			<h2>Смены в лагере</h2>
+			<div class="stages__swiper swiper">
+				<div class="stages__cards swiper-wrapper">
+					<div class="stages__card swiper-slide">
+						<span>1 смена</span>
+						<img src="@images/stage-1.png">
+						<h3>Атлетик Путешествие</h3>
+						<h4>29.05 — 16.06</h4>
+						<p>Смена путешествий и ярких эмоций. Будет много выездов и туров!</p>
+						<div>
+							<span>12 000 ₽</span>
+							<span>15 000 ₽</span>
+						</div>
+						<p>Акция действует до 15.05.2023 года</p>
+						@@include('components/ui/_button-link.html', {children: 'Забронировать место', href: '#application'})
+					</div>
+					<div class="stages__card swiper-slide">
+						<span>2 смена</span>
+						<img src="@images/stage-2.png">
+						<h3>Атлетик Творец</h3>
+						<h4>19.06 — 30.06</h4>
+						<p>Будем прокачивать творческую жилку, творить, создавать наши шедевры!</p>
+						<div>
+							<span>12 000 ₽</span>
+							<span>15 000 ₽</span>
+						</div>
+						<p>Акция действует до 15.05.2023 года</p>
+						@@include('components/ui/_button-link.html', {children: 'Забронировать место', href: '#application'})
+					</div>
+					<div class="stages__card swiper-slide">
+						<span>3 смена</span>
+						<img src="@images/stage-3.png">
+						<h3>Атлетик Лидер</h3>
+						<h4>03.07 — 14.07</h4>
+						<p>Бизнес-смена. Узнаем много нового о том, как начать совоё дело!</p>
+						<div>
+							<span>12 000 ₽</span>
+							<span>15 000 ₽</span>
+						</div>
+						<p>Акция действует до 15.05.2023 года</p>
+						@@include('components/ui/_button-link.html', {children: 'Забронировать место', href: '#application'})
+					</div>
+					<div class="stages__card swiper-slide">
+						<span>4 смена</span>
+						<img src="@images/stage-4.png">
+						<h3>Атлетик Токкер</h3>
+						<h4>17.07 — 28.07</h4>
+						<p>Смена любителей блогинга. Будем делать контент 24/7! </p>
+						<div>
+							<span>12 000 ₽</span>
+							<span>15 000 ₽</span>
+						</div>
+						<p>Акция действует до 15.05.2023 года</p>
+						@@include('components/ui/_button-link.html', {children: 'Забронировать место', href: '#application'})
+					</div>
+					<div class="stages__card swiper-slide">
+						<span>5 смена</span>
+						<img src="@images/stage-5.png">
+						<h3>Атлетик Рекорды</h3>
+						<h4>31.07 — 11.08</h4>
+						<p>Спортивная смена. Много спорта, борьбы и, конечно, рекордов!</p>
+						<div>
+							<span>12 000 ₽</span>
+							<span>15 000 ₽</span>
+						</div>
+						<p>Акция действует до 15.05.2023 года</p>
+						@@include('components/ui/_button-link.html', {children: 'Забронировать место', href: '#application'})
+					</div>
+					<div class="stages__card swiper-slide">
+						<span>6 смена</span>
+						<img src="@images/stage-6.png">
+						<h3>Атлетик Звёзды</h3>
+						<h4>14.08 — 25.08</h4>
+						<p>Самая звёздная смена. Твой шанс показать себя с самой лучше стороны!</p>
+						<div>
+							<span>12 000 ₽</span>
+							<span>15 000 ₽</span>
+						</div>
+						<p>Акция действует до 15.05.2023 года</p>
+						@@include('components/ui/_button-link.html', {children: 'Забронировать место', href: '#application'})
+					</div>
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
 			</div>
 		</section>
 	</main>

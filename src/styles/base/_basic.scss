@@ -36,6 +36,15 @@ button {
 	}
 }
 
+h2 {
+	@include medium-42;
+	color: $white;
+
+	@include mobile {
+		@include medium-28;
+	}
+}
+
 .container {
 	max-width: 1360px;
 	padding: 0 40px;
