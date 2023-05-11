@@ -1,0 +1,172 @@
+.summer {
+	background-image: url(@icons/cloud.svg);
+	background-size: cover;
+	background-position: center;
+	min-height: 588px;
+	position: relative;
+	margin-top: 64px;
+	margin-bottom: 64px;
+
+	@include desktop_medium {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	@include tablet {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		align-items: center;
+	}
+
+	h2 {
+		color: $black;
+		@include bold-72;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 498px;
+		height: fit-content;
+		text-align: center;
+		display: block;
+
+		@include desktop_base {
+			@include bold-48;
+			width: 360px;
+		}
+
+		@include tablet {
+			position: unset;
+			width: unset;
+		}
+	}
+
+	span {
+		color: $white;
+		@include regular-24;
+		display: block;
+		padding: 18px 0;
+		width: fit-content;
+		position: absolute;
+		box-shadow: 0px 0px 8px rgba(72, 72, 72, 0.25);
+
+		@include tablet {
+			position: unset;
+			text-align: center;
+		}
+	}
+
+	span:nth-child(2) {
+		background: #7968E5;
+		border-radius: 50px 50px 5px 50px;
+		max-width: 278px;
+		top: 16%;
+		left: 10%;
+		padding-left: 30px;
+		padding-right: 30px;
+		@include tablet {
+			max-width: unset;
+			padding: 18px;
+			border-radius: 50px;
+		}
+	}
+
+	span:nth-child(3) {
+		background: #FFFFFF;
+		border-radius: 50px 50px 50px 5px;
+		color: $black;
+		max-width: 456px;
+		top: 9%;
+		left: 41%;
+		padding-left: 30px;
+		padding-right: 30px;
+		@include tablet {
+			max-width: unset;
+			padding: 18px;
+			border-radius: 50px;
+		}
+	}
+
+	span:nth-child(4) {
+		background: #8AABFF;
+		border-radius: 50px 50px 50px 5px;
+		max-width: 319px;
+		top: 29%;
+		left: 72%;
+		padding-left: 35px;
+		padding-right: 30px;
+		margin-right: 10px;
+		@include tablet {
+			max-width: unset;
+			padding: 18px;
+			border-radius: 50px;
+		}
+	}
+
+	span:nth-child(5) {
+		background: #92C9FF;
+		border-radius: 50px 5px 50px 50px;
+		max-width: 290px;
+		top: 62%;
+		left: 9%;
+		padding-left: 38px;
+		padding-right: 25px;
+		@include tablet {
+			max-width: unset;
+			padding: 18px;
+			border-radius: 50px;
+		}
+	}
+
+	span:nth-child(6) {
+		background: #FFD4A3;
+		border-radius: 5px 50px 50px 50px;
+		color: $black;
+		max-width: 319px;
+		top: 56%;
+		left: 67%;
+		padding-left: 27px;
+		padding-right: 26px;
+		@include tablet {
+			max-width: unset;
+			padding: 18px;
+			border-radius: 50px;
+		}
+	}
+
+	.btn {
+		height: 67px;
+		width: 493px;
+		position: absolute;
+		bottom: 20px;
+		left: 0;
+		right: 0;
+		margin: auto;
+
+		@include tablet {
+			position: unset;
+			margin-top: 30px;
+		}
+
+		@include mobile {
+			width: 100%;
+		}
+
+		span {
+			background: unset;
+			border-radius: unset;
+			@include bold-16;
+			position: unset;
+			box-shadow: none;
+		}
+
+		&:hover {
+			span {
+				color: $pink;
+			}
+		}
+	}
+}
