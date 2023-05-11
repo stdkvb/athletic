@@ -1,0 +1,81 @@
+.footer {
+	background-color: #181F32;
+	@include radius;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 30px;
+	grid-template-areas:
+		'nav social'
+		'links dev';
+	padding: 22px 40px;
+	margin-bottom: 20px;
+
+	@include mobile {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		'nav'
+		'links'
+		'social'
+		'dev';
+		gap: 20px;
+	}
+
+	a {
+		@include medium-16;
+		color: $white;
+		width: max-content;
+	}
+
+	&__nav {
+		grid-area: nav;
+		display: flex;
+		max-width: 710px;
+		width: 100%;
+		gap: 12px;
+		justify-content: space-between;
+		align-self: center;
+		flex-wrap: wrap;
+
+		@include tablet_small {
+			flex-direction: column;
+		}
+
+		@include mobile {
+			align-items: center;
+		}
+	}
+
+	&__social {
+		grid-area: social;
+		display: flex;
+		gap: 8px;
+		justify-self: flex-end;
+
+		@include mobile {
+			justify-self: center;
+		}
+	}
+
+	&__links {
+		grid-area: links;
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+
+
+		@include mobile {
+			justify-self: center;
+			align-items: center;
+		}
+	}
+
+	&__dev {
+		grid-area: dev;
+		justify-self: flex-end;
+		align-self: flex-end;
+
+		@include mobile {
+			justify-self: center;
+		}
+	}
+}
