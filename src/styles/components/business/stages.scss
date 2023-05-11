@@ -4,9 +4,19 @@
 	@include radius;
 	margin-top: 20px;
 	padding: 44px 40px 46px 40px;
+	position: relative;
+
+	@include mobile {
+		padding: 30px 10px;
+	}
+
+	h2 {
+		position: absolute;
+		top: 40px;
+	}
 
 	&__swiper {
-		margin-top: 30px;
+		padding-top: 80px !important;
 	}
 
 	&__card {
@@ -95,15 +105,30 @@
 	}
 
 	.swiper-button-prev {
+		top: 10px;
+		right: 110px;
+		left: unset;
+
 		&:after {
 			content: url(@icons/arrow.svg);
+		}
+
+		@include mobile {
+			display: none;
 		}
 	}
 
 	.swiper-button-next {
+		top: 27px;
+		right: 40px;
+
 		&:after {
 			content: url(@icons/arrow.svg);
 			transform: rotate(180deg);
+		}
+
+		@include mobile {
+			display: none;
 		}
 	}
 }
