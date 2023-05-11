@@ -1,0 +1,143 @@
+.schedule {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+		'title tabs'
+		'content content';
+	gap: 40px;
+	align-items: center;
+
+	@include desktop_base {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		'title'
+		'tabs'
+		'content';
+	}
+
+	h2 {
+		grid-area: title;
+		color: $black;
+	}
+
+	&__tabs {
+		grid-area: tabs;
+		display: flex;
+		gap: 12px;
+
+		@include tablet {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__tab {
+		display: block;
+		height: 44px;
+		width: 108px;
+		border-radius: 30px;
+		background-color: #EFEFEF;
+		padding: 12px 20px;
+		text-align: center;
+		@include medium-16;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&.active {
+			background-color: $pink;
+			color: $white;
+
+			&:hover {
+				cursor: auto;
+			}
+		}
+
+		@include tablet {
+			width: fit-content;
+		}
+	}
+
+	&__content {
+		grid-area: content;
+		display: none;
+		flex-direction: column;
+		gap: 20px;
+
+		&.active {
+			display: flex;
+		}
+	}
+
+	&__row {
+		background: #7968E5;
+		border-radius: 30px;
+		padding: 20px 40px;
+		display: grid;
+		grid-template-columns: 0.6fr 1fr;
+		justify-content: space-between;
+		align-items: center;
+		gap: 12px;
+
+		@include tablet {
+			padding: 20px;
+		}
+
+		@include mobile {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		span {
+			display: block;
+			background-color: $black;
+			padding: 12px 24px;
+			color: $white;
+			@include medium-16;
+			border-radius: 30px;
+			width: max-content;
+
+			@include mobile {
+				padding: 12px;
+				@include regular-16;
+			}
+		}
+
+		h3 {
+			@include medium-24;
+			color: $white;
+		}
+
+		p {
+			@include regular-16;
+			color: $white;
+		}
+	}
+
+	&__row_fat {
+		background: #8AABFF;
+		grid-template-columns: 0.4fr 0.2fr 1fr;
+
+		div {
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+			 @include mobile {
+				gap: 6px;
+				&:first-of-type {
+					flex-direction: row;
+					flex-wrap: wrap;
+				}
+			 }
+		}
+
+		@include tablet {
+			grid-template-columns: 0.6fr 1fr;
+
+			picture {
+				display: none;
+			}
+		}
+	}
+}

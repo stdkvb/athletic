@@ -134,6 +134,413 @@
 			<span>Активные игры и мастер классы каждый день!</span>
 			@@include('components/ui/_button-link.html', {children: 'Хочу круто провести лето', href: '#application'})
 		</section>
+		<section class="schedule container">
+			<h2>Расписание на день</h2>
+			<div class="schedule__tabs">
+				<span class="schedule__tab active" id="tab-1">1 смена</span>
+				<span class="schedule__tab" id="tab-2">2 смена</span>
+				<span class="schedule__tab" id="tab-3">3 смена</span>
+				<span class="schedule__tab" id="tab-4">4 смена</span>
+				<span class="schedule__tab" id="tab-5">5 смена</span>
+				<span class="schedule__tab" id="tab-6">6 смена</span>
+			</div>
+			<ul class="schedule__content active" id="content-1">
+				<li class="schedule__row">
+					<span>8:30 – 9:00</span>
+					<h3>Заезд детей в лагерь, знакомство</h3>
+				</li>
+				<li class="schedule__row">
+					<span>9:00 – 10:00</span>
+					<h3>Утренняя зарядка, для бодрого дня</h3>
+				</li>
+				<li class="schedule__row">
+					<span>10:00 – 12:20</span>
+					<h3>Вкусный и питательный завтрак</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>10:00 –12:20</span>
+						<span>Свободное время</span>
+					</div>
+					<img src="@images/schedule-1.png">
+					<div>
+						<p>Время для себя</p>
+						<h3>Отдых, игры, выезд на экскурсию, кино, бассейн</h3>
+					</div>
+				</li>
+				<li class="schedule__row">
+					<span>12:30 – 13:30</span>
+					<h3>Обед – время перекусить</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>13:30 –15:00</span>
+						<span>Спокойные занятия </span>
+					</div>
+					<img src="@images/schedule-2.png">
+					<div>
+						<p>Спокойствие, только спокойствие</p>
+						<h3>Развивашки, спокойные игры, медитация</h3>
+					</div>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>15:00 –16:00</span>
+						<span>Спортивные занятия </span>
+					</div>
+					<img src="@images/schedule-3.png">
+					<div>
+						<p>Время спорта</p>
+						<h3>Спортивные мероприятия, борьба, йога</h3>
+					</div>
+				</li>
+				<li class="schedule__row">
+					<span>16:00 – 16:30</span>
+					<h3>Полдник, пора покушать</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>17:00 –18:00</span>
+						<span>Игры на свежем воздухе</span>
+					</div>
+					<img src="@images/schedule-4.png">
+					<div>
+						<p>Пора прогулятся</p>
+						<h3>Активные игры на улице и на площадке, мастер классы</h3>
+					</div>
+				</li>
+			</ul>
+			<ul class="schedule__content" id="content-2">
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>15:00 –16:00</span>
+						<span>Спортивные занятия </span>
+					</div>
+					<img src="@images/schedule-3.png">
+					<div>
+						<p>Время спорта</p>
+						<h3>Спортивные мероприятия, борьба, йога</h3>
+					</div>
+				</li>
+				<li class="schedule__row">
+					<span>16:00 – 16:30</span>
+					<h3>Полдник, пора покушать</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>17:00 –18:00</span>
+						<span>Игры на свежем воздухе</span>
+					</div>
+					<img src="@images/schedule-4.png">
+					<div>
+						<p>Пора прогулятся</p>
+						<h3>Активные игры на улице и на площадке, мастер классы</h3>
+					</div>
+				</li>
+				<li class="schedule__row">
+					<span>8:30 – 9:00</span>
+					<h3>Заезд детей в лагерь, знакомство</h3>
+				</li>
+				<li class="schedule__row">
+					<span>9:00 – 10:00</span>
+					<h3>Утренняя зарядка, для бодрого дня</h3>
+				</li>
+				<li class="schedule__row">
+					<span>10:00 – 12:20</span>
+					<h3>Вкусный и питательный завтрак</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>10:00 –12:20</span>
+						<span>Свободное время</span>
+					</div>
+					<img src="@images/schedule-1.png">
+					<div>
+						<p>Время для себя</p>
+						<h3>Отдых, игры, выезд на экскурсию, кино, бассейн</h3>
+					</div>
+				</li>
+				<li class="schedule__row">
+					<span>12:30 – 13:30</span>
+					<h3>Обед – время перекусить</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>13:30 –15:00</span>
+						<span>Спокойные занятия </span>
+					</div>
+					<img src="@images/schedule-2.png">
+					<div>
+						<p>Спокойствие, только спокойствие</p>
+						<h3>Развивашки, спокойные игры, медитация</h3>
+					</div>
+				</li>
+			</ul>
+			<ul class="schedule__content active" id="content-3">
+				<li class="schedule__row">
+					<span>8:30 – 9:00</span>
+					<h3>Заезд детей в лагерь, знакомство</h3>
+				</li>
+				<li class="schedule__row">
+					<span>9:00 – 10:00</span>
+					<h3>Утренняя зарядка, для бодрого дня</h3>
+				</li>
+				<li class="schedule__row">
+					<span>10:00 – 12:20</span>
+					<h3>Вкусный и питательный завтрак</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>10:00 –12:20</span>
+						<span>Свободное время</span>
+					</div>
+					<img src="@images/schedule-1.png">
+					<div>
+						<p>Время для себя</p>
+						<h3>Отдых, игры, выезд на экскурсию, кино, бассейн</h3>
+					</div>
+				</li>
+				<li class="schedule__row">
+					<span>12:30 – 13:30</span>
+					<h3>Обед – время перекусить</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>13:30 –15:00</span>
+						<span>Спокойные занятия </span>
+					</div>
+					<img src="@images/schedule-2.png">
+					<div>
+						<p>Спокойствие, только спокойствие</p>
+						<h3>Развивашки, спокойные игры, медитация</h3>
+					</div>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>15:00 –16:00</span>
+						<span>Спортивные занятия </span>
+					</div>
+					<img src="@images/schedule-3.png">
+					<div>
+						<p>Время спорта</p>
+						<h3>Спортивные мероприятия, борьба, йога</h3>
+					</div>
+				</li>
+				<li class="schedule__row">
+					<span>16:00 – 16:30</span>
+					<h3>Полдник, пора покушать</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>17:00 –18:00</span>
+						<span>Игры на свежем воздухе</span>
+					</div>
+					<img src="@images/schedule-4.png">
+					<div>
+						<p>Пора прогулятся</p>
+						<h3>Активные игры на улице и на площадке, мастер классы</h3>
+					</div>
+				</li>
+			</ul>
+			<ul class="schedule__content" id="content-4">
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>15:00 –16:00</span>
+						<span>Спортивные занятия </span>
+					</div>
+					<img src="@images/schedule-3.png">
+					<div>
+						<p>Время спорта</p>
+						<h3>Спортивные мероприятия, борьба, йога</h3>
+					</div>
+				</li>
+				<li class="schedule__row">
+					<span>16:00 – 16:30</span>
+					<h3>Полдник, пора покушать</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>17:00 –18:00</span>
+						<span>Игры на свежем воздухе</span>
+					</div>
+					<img src="@images/schedule-4.png">
+					<div>
+						<p>Пора прогулятся</p>
+						<h3>Активные игры на улице и на площадке, мастер классы</h3>
+					</div>
+				</li>
+				<li class="schedule__row">
+					<span>8:30 – 9:00</span>
+					<h3>Заезд детей в лагерь, знакомство</h3>
+				</li>
+				<li class="schedule__row">
+					<span>9:00 – 10:00</span>
+					<h3>Утренняя зарядка, для бодрого дня</h3>
+				</li>
+				<li class="schedule__row">
+					<span>10:00 – 12:20</span>
+					<h3>Вкусный и питательный завтрак</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>10:00 –12:20</span>
+						<span>Свободное время</span>
+					</div>
+					<img src="@images/schedule-1.png">
+					<div>
+						<p>Время для себя</p>
+						<h3>Отдых, игры, выезд на экскурсию, кино, бассейн</h3>
+					</div>
+				</li>
+				<li class="schedule__row">
+					<span>12:30 – 13:30</span>
+					<h3>Обед – время перекусить</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>13:30 –15:00</span>
+						<span>Спокойные занятия </span>
+					</div>
+					<img src="@images/schedule-2.png">
+					<div>
+						<p>Спокойствие, только спокойствие</p>
+						<h3>Развивашки, спокойные игры, медитация</h3>
+					</div>
+				</li>
+			</ul>
+			<ul class="schedule__content active" id="content-5">
+				<li class="schedule__row">
+					<span>8:30 – 9:00</span>
+					<h3>Заезд детей в лагерь, знакомство</h3>
+				</li>
+				<li class="schedule__row">
+					<span>9:00 – 10:00</span>
+					<h3>Утренняя зарядка, для бодрого дня</h3>
+				</li>
+				<li class="schedule__row">
+					<span>10:00 – 12:20</span>
+					<h3>Вкусный и питательный завтрак</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>10:00 –12:20</span>
+						<span>Свободное время</span>
+					</div>
+					<img src="@images/schedule-1.png">
+					<div>
+						<p>Время для себя</p>
+						<h3>Отдых, игры, выезд на экскурсию, кино, бассейн</h3>
+					</div>
+				</li>
+				<li class="schedule__row">
+					<span>12:30 – 13:30</span>
+					<h3>Обед – время перекусить</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>13:30 –15:00</span>
+						<span>Спокойные занятия </span>
+					</div>
+					<img src="@images/schedule-2.png">
+					<div>
+						<p>Спокойствие, только спокойствие</p>
+						<h3>Развивашки, спокойные игры, медитация</h3>
+					</div>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>15:00 –16:00</span>
+						<span>Спортивные занятия </span>
+					</div>
+					<img src="@images/schedule-3.png">
+					<div>
+						<p>Время спорта</p>
+						<h3>Спортивные мероприятия, борьба, йога</h3>
+					</div>
+				</li>
+				<li class="schedule__row">
+					<span>16:00 – 16:30</span>
+					<h3>Полдник, пора покушать</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>17:00 –18:00</span>
+						<span>Игры на свежем воздухе</span>
+					</div>
+					<img src="@images/schedule-4.png">
+					<div>
+						<p>Пора прогулятся</p>
+						<h3>Активные игры на улице и на площадке, мастер классы</h3>
+					</div>
+				</li>
+			</ul>
+			<ul class="schedule__content" id="content-6">
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>15:00 –16:00</span>
+						<span>Спортивные занятия </span>
+					</div>
+					<img src="@images/schedule-3.png">
+					<div>
+						<p>Время спорта</p>
+						<h3>Спортивные мероприятия, борьба, йога</h3>
+					</div>
+				</li>
+				<li class="schedule__row">
+					<span>16:00 – 16:30</span>
+					<h3>Полдник, пора покушать</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>17:00 –18:00</span>
+						<span>Игры на свежем воздухе</span>
+					</div>
+					<img src="@images/schedule-4.png">
+					<div>
+						<p>Пора прогулятся</p>
+						<h3>Активные игры на улице и на площадке, мастер классы</h3>
+					</div>
+				</li>
+				<li class="schedule__row">
+					<span>8:30 – 9:00</span>
+					<h3>Заезд детей в лагерь, знакомство</h3>
+				</li>
+				<li class="schedule__row">
+					<span>9:00 – 10:00</span>
+					<h3>Утренняя зарядка, для бодрого дня</h3>
+				</li>
+				<li class="schedule__row">
+					<span>10:00 – 12:20</span>
+					<h3>Вкусный и питательный завтрак</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>10:00 –12:20</span>
+						<span>Свободное время</span>
+					</div>
+					<img src="@images/schedule-1.png">
+					<div>
+						<p>Время для себя</p>
+						<h3>Отдых, игры, выезд на экскурсию, кино, бассейн</h3>
+					</div>
+				</li>
+				<li class="schedule__row">
+					<span>12:30 – 13:30</span>
+					<h3>Обед – время перекусить</h3>
+				</li>
+				<li class="schedule__row schedule__row_fat">
+					<div>
+						<span>13:30 –15:00</span>
+						<span>Спокойные занятия </span>
+					</div>
+					<img src="@images/schedule-2.png">
+					<div>
+						<p>Спокойствие, только спокойствие</p>
+						<h3>Развивашки, спокойные игры, медитация</h3>
+					</div>
+				</li>
+			</ul>
+		</section>
 	</main>
 	<!-- @@include('components/business/_footer.html') -->
 

@@ -26,3 +26,54 @@ new Swiper('.stages__swiper', {
 		}
 	}
 })
+
+function deactivateTabs() {
+	document.querySelectorAll('.schedule__tab').forEach((elem) => {
+		elem.classList.remove('active')
+	})
+	document.querySelectorAll('.schedule__content').forEach((elem) => {
+		elem.classList.remove('active')
+	})
+}
+
+document.getElementById('tab-1').addEventListener('click', () => {
+	deactivateTabs()
+	document.getElementById('tab-1').classList.add('active')
+	document.getElementById('content-1').classList.add('active')
+})
+
+document.getElementById('tab-2').addEventListener('click', () => {
+	deactivateTabs()
+	document.getElementById('tab-2').classList.add('active')
+	document.getElementById('content-2').classList.add('active')
+})
+
+document.getElementById('tab-2').addEventListener('click', () => {
+	deactivateTabs()
+	document.getElementById('tab-2').classList.add('active')
+	document.getElementById('content-2').classList.add('active')
+})
+
+document.getElementById('tab-3').addEventListener('click', () => {
+	deactivateTabs()
+	document.getElementById('tab-3').classList.add('active')
+	document.getElementById('content-3').classList.add('active')
+})
+
+document.getElementById('tab-4').addEventListener('click', () => {
+	deactivateTabs()
+	document.getElementById('tab-4').classList.add('active')
+	document.getElementById('content-4').classList.add('active')
+})
+
+document.getElementById('tab-5').addEventListener('click', () => {
+	deactivateTabs()
+	document.getElementById('tab-5').classList.add('active')
+	document.getElementById('content-5').classList.add('active')
+})
+
+document.getElementById('tab-6').addEventListener('click', () => {
+	deactivateTabs()
+	document.getElementById('tab-6').classList.add('active')
+	document.getElementById('content-6').classList.add('active')
+})
