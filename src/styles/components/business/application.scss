@@ -13,6 +13,10 @@
 	padding-top: 40px;
 	padding-bottom: 40px;
 
+	@include mobile {
+		margin-top: 20px;
+	}
+
 	h2 {
 		width: fit-content;
 		@include bold-58;

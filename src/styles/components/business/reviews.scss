@@ -1,0 +1,92 @@
+.reviews {
+	display: grid;
+	grid-template-columns: 1fr 160px;
+	grid-template-areas:
+		'title button'
+		'video video';
+	gap: 28px;
+	margin-top: 64px;
+	padding: 0;
+
+	@include mobile {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		'title'
+		'video'
+		'button';
+		gap: 20px;
+	}
+
+	h2 {
+		grid-area: title;
+		color: $black;
+	}
+
+	.btn {
+		grid-area: button;
+		background-color: $white;
+		border: solid 1px $pink;
+		align-self: center;
+		justify-self: flex-end;
+
+		@include mobile {
+			width: 100%;
+		}
+
+		.children {
+			color: $pink;
+		}
+
+		&:hover {
+			background-color: $pink;
+
+			.children {
+				color: $white;
+			}
+		}
+	}
+
+	&__cards {
+		grid-area: video;
+		display: grid;
+		gap: 20px;
+		grid-template-columns: repeat(4, 1fr);
+
+		@include tablet {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include mobile {
+			grid-template-columns: 1fr;
+		}
+
+		&.active{
+			.reviews__card:nth-child(n+5) {
+				display: flex;
+			}
+		}
+	}
+
+	&__card {
+		width: 100%;
+		background: #FFCF8A;
+		border-radius: 40px;
+		padding: 40px 24px;
+		display: flex;
+		flex-direction: column;
+
+		@include mobile {
+			padding: 20px;
+		}
+
+		p {
+			@include medium-16;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		&:nth-child(n+5) {
+			display: none;
+		}
+	}
+}

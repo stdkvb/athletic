@@ -77,3 +77,24 @@ document.getElementById('tab-6').addEventListener('click', () => {
 	document.getElementById('tab-6').classList.add('active')
 	document.getElementById('content-6').classList.add('active')
 })
+
+// video controller
+const playButtons = document.querySelectorAll('.video-controler')
+playButtons.forEach((elem) => {
+	elem.addEventListener('click', () => {
+		elem.classList.add('active')
+		elem.previousElementSibling.play()
+	})
+
+	elem.previousElementSibling.addEventListener('click', () => {
+		if (elem.classList.contains('active')) {
+			elem.classList.remove('active')
+			elem.previousElementSibling.pause()
+		}
+	})
+})
+
+document.getElementById('show-more').addEventListener('click', () => {
+	document.getElementById('show-more').style.display = 'none'
+	document.querySelector('.reviews__cards').classList.add('active')
+})
