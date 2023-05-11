@@ -55,7 +55,9 @@
 		}
 
 		&.active {
-			transform: translateX(-360px);
+			@include tablet {
+				transform: translateX(-360px);
+			}
 			@include mobile {
 				transform: translateX(-100vw);
 			}

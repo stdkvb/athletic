@@ -1,3 +1,4 @@
+// header menu
 const burger = document.getElementById('burger')
 const menu = document.getElementById('menu')
 burger.addEventListener('click', () => {
@@ -14,6 +15,7 @@ links.forEach((element) => {
 	})
 });
 
+// swiper init
 new Swiper('.stages__swiper', {
 	slidesPerView: 'auto',
 	spaceBetween: 20,
@@ -27,6 +29,7 @@ new Swiper('.stages__swiper', {
 	}
 })
 
+// tabs
 function deactivateTabs() {
 	document.querySelectorAll('.schedule__tab').forEach((elem) => {
 		elem.classList.remove('active')
@@ -94,6 +97,7 @@ playButtons.forEach((elem) => {
 	})
 })
 
+// show more button
 document.getElementById('show-more').addEventListener('click', () => {
 	document.getElementById('show-more').style.display = 'none'
 	document.querySelector('.reviews__cards').classList.add('active')

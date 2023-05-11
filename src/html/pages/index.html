@@ -34,6 +34,7 @@
 					<li>Самбо</li>
 					<li>Кикбоксинг</li>
 					<li>Акробатика</li>
+					<li>Дэнс микс</li>
 				</ul>
 			</div>
 		</section>
@@ -134,7 +135,7 @@
 			<span>Активные игры и мастер классы каждый день!</span>
 			@@include('components/ui/_button-link.html', {children: 'Хочу круто провести лето', href: '#application'})
 		</section>
-		<section class="schedule container">
+		<section class="schedule container" id="schedule">
 			<h2>Расписание на день</h2>
 			<div class="schedule__tabs">
 				<span class="schedule__tab active" id="tab-1">1 смена</span>
@@ -541,7 +542,7 @@
 				</li>
 			</ul>
 		</section>
-		<section class="reviews container">
+		<section class="reviews container" id="reviews">
 			<h2>Отзывы</h2>
 			@@include('components/ui/_button.html', {children: 'Еще отзывы', id: 'show-more'})
 			<div class="reviews__cards">
@@ -633,3 +634,4 @@
 </body>
 
 </html>
+<input hidden>
