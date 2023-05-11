@@ -1,0 +1,70 @@
+.application {
+	margin-top: 64px;
+	margin-bottom: 20px;
+	min-height: 439px;
+	background-image: url(@images/application-background.png);
+	background-size: cover;
+	@include radius;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	h2 {
+		width: fit-content;
+		@include bold-58;
+		margin-bottom: 12px;
+
+		@include tablet {
+			@include bold-32;
+		}
+
+		@include mobile {
+			@include bold-28;
+		}
+	}
+
+	h3 {
+		width: fit-content;
+		@include regular-32;
+		margin-bottom: 30px;
+		color: $white;
+
+		@include tablet {
+			@include regular-28;
+		}
+
+		@include mobile {
+			@include regular-20;
+		}
+	}
+
+	form {
+		width: 493px;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+
+		input {
+			width: 100%;
+			height: 59px;
+			border-radius: 100px;
+			padding: 20px;
+			border: none;
+			color: #909090;
+			@include regular-16;
+		}
+
+		.btn {
+			width: 100%;
+			height: 59px;
+		}
+
+		@include mobile {
+			width: 100%;
+		}
+	}
+}

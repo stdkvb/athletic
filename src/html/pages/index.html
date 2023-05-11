@@ -541,6 +541,15 @@
 				</li>
 			</ul>
 		</section>
+		<section class="application container" id="application">
+			<h2>Оставьте заявку со скидкой </h2>
+			<h3>До 15 мая 2023 года можно забронировать место по цене 12000₽ </h3>
+			<form onsubmit="alert('Ваша заявка успешно отправлена!')">
+				<input type="text" placeholder="Ваше имя" required>
+				<input type="text" placeholder="Ваш номер телефона" required>
+				@@include('components/ui/_button.html', {children: 'Забронировать', type: 'submit'})
+			</form>
+		</section>
 	</main>
 	<!-- @@include('components/business/_footer.html') -->
 
